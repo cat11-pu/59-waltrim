@@ -13,10 +13,10 @@ const parts = partition(spec.records, spec.limit);
 const back = recover(parts.segments, spec.records, spec.torn_at);
 const view = render(spec);
 
-emit("分段 =", JSON.stringify(parts.segments));
-emit("每段字节数 =", JSON.stringify(parts.sizes));
-emit("保留的记录 =", JSON.stringify(back.kept));
-emit("被丢弃的残尾 =", JSON.stringify(back.torn));
+emit("分段 =", parts.segments);
+emit("每段字节数 =", parts.sizes);
+emit("保留的记录 =", back.kept);
+emit("被丢弃的残尾 =", back.torn);
 emit("损坏段的位置 =", back.corrupt_at);
 emit("校验是否通过 =", back.checksum_ok);
 emit("分段上限 =", spec.limit);
