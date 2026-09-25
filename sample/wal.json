@@ -1,0 +1,12 @@
+{
+  "checksum_code": "E_CHECKSUM_MISMATCH",
+  "limit": 8,
+  "torn_at": 3,
+  "records": [
+    {"id": "r0", "bytes": 3, "checksum": 11},
+    {"id": "r1", "bytes": 4, "checksum": 12},
+    {"id": "r2", "bytes": 5, "checksum": 13},
+    {"id": "r3", "bytes": 2, "checksum": 14}
+  ],
+  "segment_growth": 1
+}
